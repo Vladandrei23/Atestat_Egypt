@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <title>Discover Egypt</title>
+      <style>
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   scroll-behavior: smooth;
+}
+
+a {
+   text-decoration: none;
+   color: #333;
+}
+
+a:hover {
+   color: #666;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   position:fixed;
+   width: 100%;
+   background-color: rgba(0,0,0,0.5);
+   z-index: 100;
+}
+
+.header h1 {
+   color: #fff;
+   font-size: 1.5rem;
+}
+
+.header nav {
+   display: flex;
+}
+
+.header a {
+   color: #fff;
+   padding: 0 1rem;
+}
+
+.header a:hover {
+   background-color: #C09E54;
+   border-radius: 5px;
+}
+
+.intro {
+   background-image: url("./images/bg.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #fff;
+   font-size: 2rem;
+   z-index: 1;
+}
+
+.intro h1 {
+   margin-bottom: 1rem;
+   font-size: 2.5rem;
+   margin-top: 0px;
+}
+
+.intro p {
+   margin-bottom: 2rem;
+   font-size: 1.2rem;
+   max-width: 40rem;
+   align-self: center;
+}
+
+.intro a {
+   display: inline-block;
+   background-color: #f5deb3;
+   color: #333;
+   padding: 1rem 2rem;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.intro a:hover {
+   background-color: #e9cc80;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-gap: 1rem;
+   padding: 2rem;
+   z-index: 1;
+}
+
+.grid h2 {
+   margin-bottom: 1rem;
+   font-size: 1.5rem;
+}
+
+.grid p {
+   margin-bottom: 1rem;
+   font-size: 1.2rem;
+}
+
+.grid a {
+   display: block;
+   background-color: #f5deb3;
+   color: #333;
+   padding: 1rem;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.grid a:hover {
+   background-color: #e9cc80;
+}
+
+footer {
+   background-color: #333;
+   color: #fff;
+   padding: 1rem;
+   text-align: center;
+}
+
+footer p {
+   font-size: 0.9rem;
+}
+
+footer a {
+   color: #ccc;
+}
+
+footer a:hover {
+   color: #fff;
+}
+
+@media (max-width: 768px) {
+   .header h1 {
+      font-size: 1.2rem;
+   }
+
+   .intro h1 {
+      font-size: 1.8rem;
+   }
+
+   .intro p {
+      font-size: 1rem;
+   }
+
+   .grid h2 {
+      font-size: 1.2rem;
+   }
+
+   .grid p {
+      font-size: 1rem;
+   }
+}
+      </style>
+   </head>
+   <body>
+   
+   
+   <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+      <header class="header">
+         <h1>Discover Egypt</h1>
+         <nav>
+            <a href="./index.html">Home</a>
+            <a href="./history.html">History</a>
+            <a href="./culture.html">Culture</a>
+            <a href="./tourism.html">Tourism</a>
+            <a href="./gallery.html">Gallery</a>
+         </nav>
+      </header>
+		 <section class="intro">
+         <h1>A Land of Wonder and History</h1>
+         <p> Immerse yourself in the magic of Egypt, where ancient history whispers through towering pyramids and the Nile River winds its way through a vibrant culture. Explore the iconic Pyramids of Giza, marvel at the enigmatic Sphinx, and lose yourself in the grandeur of pharaonic temples.</p>
+      </section>
+   </body>
+</html>

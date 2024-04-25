@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <title>Gallery</title>
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+			background-image: url("./images/bg-gallery.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+         }
+
+         a {
+            text-decoration: none;
+            color: #fff;
+         }
+
+         a:hover {
+            color: #666;
+         }
+
+         .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            position:fixed;
+            width: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 100;
+         }
+
+         .header h1 {
+            color: #fff;
+            font-size: 1.5rem;
+         }
+
+         .header nav {
+            display: flex;
+         }
+
+         .header a {
+            color: #fff;
+            padding: 0 1rem;
+         }
+
+         .header a:hover {
+            background-color: #C09E54;
+            border-radius: 5px;
+         }
+
+         .section {
+            padding: 2rem;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 1200px;
+         }
+
+         h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+			color: #fff;
+         }
+		 
+		 h4 {
+		 color: #fff;
+		 }
+
+         p {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+			color: #fff;
+         }
+
+         .ancient-egypt {
+            margin-top: 3rem;
+         }
+
+         footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+         }
+
+         footer p {
+            font-size: 0.9rem;
+         }
+
+         footer a {
+            color: #ccc;
+         }
+
+         footer a:hover {
+            color: #fff;
+         }
+
+         @media (max-width: 768px) {
+            .header h1 {
+               font-size: 1.2rem;
+            }
+
+            h2 {
+               font-size: 1.2rem;
+            }
+
+            p {
+               font-size: 1rem;
+            }
+         }
+		
+		.gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 10px;
+            margin: 2rem 0;
+         }
+         .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform .3s ease-in-out;
+         }
+         .gallery img:hover {
+            transform: scale(1.1);
+         }
+		
+      </style>
+   </head>
+   <body>
+      <header class="header">
+         <h1>Gallery</h1>
+         <nav>
+            <a href="./index.html">Home</a>
+            <a href="./history.html">History</a>
+            <a href="./culture.html">Culture</a>
+            <a href="./tourism.html">Tourism</a>
+            <a href="./gallery.html">Gallery</a>
+         </nav>
+      </header>
+      <main>
+         <div class="section">
+            <h1 id="history" style="margin-top: 100px; text-align: center; color: #fff;">Gallery: The Visual Splendor of Egypt</h1>
+            <p style="margin-top: 10px; text-align: center;">
+Immerse yourself in the visual splendor of Egypt through our captivating image gallery. Explore a collection of photographs showcasing the country's vibrant culture, breathtaking landscapes, and awe-inspiring historical sites.  Prepare to be transported on a visual journey through the wonders of Egypt!
+            </p>
+            <div class="gallery">
+               <a href="./images/gallery/pyramids.jpg" target="_blank">
+                  <img src="./images/gallery/pyramids.jpg" alt="Pyramids of Giza">
+               </a>
+               <a href="./images/gallery/sphinx.jpeg" target="_blank">
+                  <img src="./images/gallery/sphinx.jpeg" alt="Sphinx">
+               </a>
+               <a href="./images/gallery/nile.jpeg" target="_blank">
+                  <img src="./images/gallery/nile.jpeg" alt="Nile River">
+               </a>
+               <a href="./images/gallery/sahara.jpg" target="_blank">
+                  <img src="./images/gallery/sahara.jpg" alt="Sahara Desert">
+               </a>
+               <a href="./images/gallery/festival.jpg" target="_blank">
+                  <img src="./images/gallery/festival.jpg" alt="Egyptian Festival">
+               </a>
+			   <a href="./images/gallery/karnak.jpg" target="_blank">
+                  <img src="./images/gallery/karnak.jpg" alt="Karnak Temple">
+               </a>
+			   <a href="./images/gallery/cairo.jpeg" target="_blank">
+                  <img src="./images/gallery/cairo.jpeg" alt="Cairo">
+               </a>
+			   <a href="./images/gallery/cairo2.jpeg" target="_blank">
+                  <img src="./images/gallery/cairo2.jpeg" alt="Cairo 2">
+               </a>
+			   <a href="./images/gallery/alexandria.jpeg" target="_blank">
+                  <img src="./images/gallery/alexandria.jpeg" alt="Alexandria">
+               </a>
+			   <a href="./images/gallery/montaza.jpg" target="_blank">
+                  <img src="./images/gallery/montaza.jpg" alt="Montaza Palace">
+               </a>
+			   <a href="./images/gallery/hurghada.jpeg" target="_blank">
+                  <img src="./images/gallery/hurghada.jpeg" alt="Hurghada">
+               </a>
+			   <a href="./images/gallery/sinai.jpeg" target="_blank">
+                  <img src="./images/gallery/sinai.jpeg" alt="Sinai">
+               </a>
+            </div>
+		</main>
+	</body>
+</html>
